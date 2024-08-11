@@ -1,0 +1,5 @@
+build Client:
+g++ mainClient.cpp Client/*.cpp Message/*.cpp UI/Menu.cpp -o mainClient -lws2_32 -lgdi32 -luser32; .\mainClient
+
+build Server:
+g++ mainServer.cpp Server/*.cpp Client/*.cpp Server/Function/*.cpp Message/*.cpp UI/menu.cpp -o mainServer -lws2_32 -lgdi32 -luser32; .\mainServer
